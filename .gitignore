@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+htmlcov/
+*.egg-info/
+data/indexes/*
+!data/indexes/.gitkeep
+data/github/

@@ -1,0 +1,11 @@
+{"repo_id": "sample/repo", "task_type": "issue_triage", "question": "Login fails after token expires", "context": {"issue_title": "Login fails after token expires", "issue_body": "Users are logged out after refresh token expiry."}, "expected_category": "bug", "expected_severity": "medium"}
+{"repo_id": "sample/repo", "task_type": "issue_triage", "question": "Document refresh token lifecycle", "context": {"issue_title": "Document refresh token lifecycle", "issue_body": "Docs should explain token expiration behavior."}, "expected_category": "docs", "expected_severity": "low"}
+{"repo_id": "sample/repo", "task_type": "issue_triage", "question": "Add session revocation endpoint", "context": {"issue_title": "Add session revocation endpoint", "issue_body": "Feature request for an admin revocation endpoint."}, "expected_category": "feature_request", "expected_severity": "low"}
+{"repo_id": "sample/repo", "task_type": "issue_triage", "question": "Refresh route returns 500 on malformed token", "context": {"issue_title": "Refresh route returns 500 on malformed token", "issue_body": "Malformed token causes 500 error."}, "expected_category": "bug", "expected_severity": "high"}
+{"repo_id": "sample/repo", "task_type": "issue_triage", "question": "Why must users sign in again after idle sessions?", "context": {"issue_title": "Why must users sign in again?", "issue_body": "Support question about idle sessions."}, "expected_category": "question", "expected_severity": "low"}
+{"repo_id": "sample/repo", "task_type": "repo_qa", "question": "How does authentication handle token refresh?"}
+{"repo_id": "sample/repo", "task_type": "repo_qa", "question": "Where is the refresh token logic implemented?"}
+{"repo_id": "sample/repo", "task_type": "repo_qa", "question": "What are known auth edge cases?"}
+{"repo_id": "sample/repo", "task_type": "repo_qa", "question": "Which docs explain token lifecycle?"}
+{"repo_id": "sample/repo", "task_type": "repo_qa", "question": "Which module powers the refresh route?"}
+

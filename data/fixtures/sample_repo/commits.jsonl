@@ -1,0 +1,4 @@
+{"sha": "abc123", "message": "fix auth token refresh edge case", "paths": ["src/auth/session.py"], "author": "Ada"}
+{"sha": "def456", "message": "document authentication refresh lifecycle", "paths": ["docs/authentication.md"], "author": "Lin"}
+{"sha": "fed999", "message": "wire refresh route to session module", "paths": ["src/api/routes.py"], "author": "Sam"}
+

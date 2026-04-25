@@ -1,0 +1,10 @@
+{"repo":"Textualize/rich","question":"Can Rich support HTML output?","expected_threads":[3896],"expected_status":"rejected","expected_relation":"direct_decision"}
+{"repo":"Textualize/rich","question":"Why not support a strict plain text mode in Jupyter?","expected_threads":[3896],"expected_status":"rejected","expected_relation":"direct_decision"}
+{"repo":"Textualize/rich","question":"Can Rich disable hyperlinks in notebook output?","expected_threads":[3896],"expected_status":"rejected","expected_relation":"direct_decision"}
+{"repo":"pallets/click","question":"Why not use argparse internally?","expected_threads":[1728],"expected_status":"rejected","expected_relation":"direct_decision"}
+{"repo":"pallets/click","question":"Can Click support long command lines from a file like argparse?","expected_threads":[2427],"expected_status":"rejected","expected_relation":"direct_decision"}
+{"repo":"pallets/click","question":"Why not parse function signatures automatically?","expected_threads":[141],"expected_status":"rejected","expected_relation":"direct_decision"}
+{"repo":"encode/httpx","question":"Can HTTPX support HTTP/3?","expected_threads":[],"expected_status":"unknown","expected_relation":"none"}
+{"repo":"encode/httpx","question":"Why not support urllib3 retries directly?","expected_threads":[],"expected_status":"unknown","expected_relation":"none"}
+{"repo":"encode/httpx","question":"Can HTTPX support requests-style hooks for all events?","expected_threads":[],"expected_status":"unknown","expected_relation":"none"}
+
