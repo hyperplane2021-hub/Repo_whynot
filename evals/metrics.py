@@ -13,7 +13,7 @@ class EvalMetrics:
     def render(self) -> str:
         return "\n".join(
             [
-                "RepoOps v0.3 Eval",
+                "Repo_whynot v0.3 Eval",
                 "-----------------",
                 f"Cases: {self.cases}",
                 f"Schema valid rate: {self.schema_valid_rate:.1f}%",

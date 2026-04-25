@@ -69,7 +69,7 @@ def _print_report(rows: list[dict[str, Any]]) -> None:
     repoops_top3 = sum(row["repoops_top3"] for row in positives)
     baseline_unknown = sum(row["baseline_none"] for row in negatives)
     repoops_unknown = sum(row["repoops_none"] for row in negatives)
-    print("Why-Not: Simple GitHub Search vs RepoOps")
+    print("Why-Not: Simple GitHub Search vs Repo_whynot")
     print("----------------------------------------")
     print(f"Cases: {len(rows)}")
     print(
@@ -80,14 +80,20 @@ def _print_report(rows: list[dict[str, Any]]) -> None:
         f"Baseline top-3: {_pct(baseline_top3, len(positives))} "
         f"({baseline_top3}/{len(positives)})"
     )
-    print(f"RepoOps top-1: {_pct(repoops_top1, len(positives))} ({repoops_top1}/{len(positives)})")
-    print(f"RepoOps top-3: {_pct(repoops_top3, len(positives))} ({repoops_top3}/{len(positives)})")
+    print(
+        f"Repo_whynot top-1: {_pct(repoops_top1, len(positives))} "
+        f"({repoops_top1}/{len(positives)})"
+    )
+    print(
+        f"Repo_whynot top-3: {_pct(repoops_top3, len(positives))} "
+        f"({repoops_top3}/{len(positives)})"
+    )
     print(
         "Baseline unknown accuracy: "
         f"{_pct(baseline_unknown, len(negatives))} ({baseline_unknown}/{len(negatives)})"
     )
     print(
-        "RepoOps unknown accuracy: "
+        "Repo_whynot unknown accuracy: "
         f"{_pct(repoops_unknown, len(negatives))} ({repoops_unknown}/{len(negatives)})"
     )
     print()

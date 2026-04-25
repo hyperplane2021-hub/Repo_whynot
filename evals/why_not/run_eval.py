@@ -80,7 +80,7 @@ def _print_report(rows: list[dict[str, Any]]) -> None:
     cases = len(rows)
     positive = [row for row in rows if not row["expected_none"]]
     negative = [row for row in rows if row["expected_none"]]
-    print("RepoOps Why-Not Eval")
+    print("Repo_whynot Eval")
     print("--------------------")
     print(f"Cases: {cases}")
     print(f"Positive cases: {len(positive)}")

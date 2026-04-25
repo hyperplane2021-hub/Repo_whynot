@@ -1,6 +1,6 @@
-# RepoOps Maintainer Agent
+# Repo_whynot
 
-This repo is the v0.3 MVP for a local-first maintainer assistant.
+This repo is the v0.3 MVP for a small read-only maintainer history tool.
 
 Guidelines for future agents:
 

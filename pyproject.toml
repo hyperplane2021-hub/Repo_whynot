@@ -1,7 +1,7 @@
 [project]
-name = "repoops-maintainer-agent"
+name = "repo-whynot"
 version = "0.3.0"
-description = "Local-first maintainer assistant for repository QA and issue triage."
+description = "Small read-only tool for finding prior maintainer decisions in GitHub issues."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

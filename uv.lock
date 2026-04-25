@@ -602,7 +602,7 @@ wheels = [
 ]
 
 [[package]]
-name = "repoops-maintainer-agent"
+name = "repo-whynot"
 version = "0.3.0"
 source = { editable = "." }
 dependencies = [

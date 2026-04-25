@@ -1,6 +1,6 @@
 # Architecture
 
-RepoOps v0.2 uses an explicit graph runtime:
+Repo_whynot v0.2 uses an explicit graph runtime:
 
 ```text
 intent_router -> query_rewrite -> retrieve -> evidence_merge

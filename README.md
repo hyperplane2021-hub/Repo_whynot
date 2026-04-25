@@ -1,34 +1,29 @@
-# RepoOps Maintainer Agent
+# Repo_whynot
 
-![RepoOps Why-Not Investigator](assets/repoops-why-not.svg)
+![Repo_whynot](assets/repoops-why-not.svg)
 
-RepoOps is a local-first, read-only maintainer assistant. The current v0.3 focus is narrow:
-answering "why not?" questions by finding prior maintainer decisions in repository history.
-
-It is not trying to be a fully autonomous coding agent. The workflow stays explicit,
-bounded, observable, and testable.
+Repo_whynot is a small read-only tool for answering "why not?" questions from repository
+history. It searches prior GitHub issues, finds maintainer decisions, and returns cited
+evidence before you open a new issue or PR.
 
 ## What It Does
 
-RepoOps helps answer questions like:
+Repo_whynot helps answer questions like:
 
 - "Why not use argparse internally?"
 - "Can this project support HTML output?"
 - "Was this feature already rejected?"
 - "Is there an old issue that explains the maintainer position?"
 
-The v0.3 investigator searches closed GitHub issues, grades evidence, and returns a
-structured `PriorDecisionResult` with cited thread numbers, confidence, status, facts,
-inferences, and uncertainties.
+It searches closed GitHub issues, grades candidate threads, and returns a structured
+`PriorDecisionResult` with cited thread numbers, confidence, status, facts, inferences,
+and uncertainties.
 
 ## Why This Exists
 
-General coding agents are good at reading code. Maintainers also need a different kind of
-memory: prior decisions, rejected proposals, duplicate threads, and nuanced project policy
-that lives in old issues.
-
-RepoOps is valuable when a contributor or maintainer wants to know whether an idea has
-history before opening a new issue or PR.
+Many project decisions live in old issues rather than docs. Repo_whynot is useful when a
+contributor or maintainer wants quick context on whether an idea has already been accepted,
+rejected, deferred, or discussed as a duplicate.
 
 ## Safety Model
 
@@ -96,39 +91,15 @@ Current seed benchmark:
 Cases: 9
 Baseline top-1: 33.3% (2/6)
 Baseline top-3: 50.0% (3/6)
-RepoOps top-1: 100.0% (6/6)
-RepoOps top-3: 100.0% (6/6)
+Repo_whynot top-1: 100.0% (6/6)
+Repo_whynot top-3: 100.0% (6/6)
 Baseline unknown accuracy: 100.0% (3/3)
-RepoOps unknown accuracy: 100.0% (3/3)
+Repo_whynot unknown accuracy: 100.0% (3/3)
 ```
 
 This is a small eval, not a broad claim. It is useful because it tests the product thesis:
 query planning and evidence grading can recover prior decisions that plain issue search
 misses.
-
-## v0.2 Repo QA Workflow
-
-The broader repo QA path still exists:
-
-```text
-intent_router
-  -> query planner
-  -> retrieve
-  -> evidence merge
-  -> evidence grader
-  -> tool planner
-  -> controlled read-only tool loop
-  -> evidence-grounded final synthesis
-  -> action gate
-```
-
-Example:
-
-```bash
-uv run repoops index --repo-path ./data/fixtures/sample_repo --repo-id sample/repo
-uv run repoops ask --repo-id sample/repo --question "How does authentication handle token refresh?"
-uv run repoops triage --repo-id sample/repo --issue-file ./data/samples/issue_auth_bug.md
-```
 
 ## API
 
@@ -138,9 +109,6 @@ uv run uvicorn app.main:app --reload
 
 ```bash
 curl http://127.0.0.1:8000/health
-curl -X POST http://127.0.0.1:8000/query \
-  -H 'content-type: application/json' \
-  -d '{"repo_id":"sample/repo","task_type":"repo_qa","question":"Where is refresh implemented?"}'
 ```
 
 ## Development

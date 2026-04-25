@@ -8,7 +8,7 @@ def query_rewrite(state: GraphState) -> GraphState:
     fallback_plan = _fallback_query_plan(state)
     llm_result = generate_json_result(
         instructions=(
-            "You are the RepoOps LLM Query Planner. Return only valid JSON matching "
+            "You are the Repo_whynot LLM Query Planner. Return only valid JSON matching "
             "QueryPlan. Set intent_family to one of overview, how_it_works, where_is, "
             "troubleshooting, change_impact, issue_triage, usage, or unknown. Use "
             "intent_description, preferred_evidence, and avoid_evidence to describe the "

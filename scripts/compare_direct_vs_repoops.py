@@ -53,7 +53,7 @@ def main() -> None:
         print(f"context_files: {', '.join(direct_context['included_files'])}")
         print(direct["answer"])
 
-        print("\n--- RepoOps ---")
+        print("\n--- Repo_whynot ---")
         print(f"latency_ms: {repoops_ms:.0f}")
         print(repoops["result"]["answer"])
         print("evidence:")

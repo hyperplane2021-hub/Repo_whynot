@@ -7,7 +7,7 @@ def evidence_grader(state: GraphState) -> GraphState:
     fallback_report = _fallback_grade_report(state)
     llm_result = generate_json_result(
         instructions=(
-            "You are the RepoOps LLM Evidence Grader. Return only valid JSON matching "
+            "You are the Repo_whynot LLM Evidence Grader. Return only valid JSON matching "
             "EvidenceGradeReport. Grade each candidate evidence item as high, medium, "
             "low, or irrelevant. Mark exactly one role for each graded item: primary, "
             "supporting, background, duplicate_candidate, or risk_signal. Keep only "

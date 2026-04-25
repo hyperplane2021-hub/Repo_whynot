@@ -105,7 +105,7 @@ def _fetch_comments_sample(comments_url: str | None, limit: int) -> list[dict[st
 def _github_get(url: str) -> Any:
     headers = {
         "Accept": "application/vnd.github+json",
-        "User-Agent": "repoops-maintainer-agent",
+        "User-Agent": "repo-whynot",
         "X-GitHub-Api-Version": "2022-11-28",
     }
     token = get_settings().github_token

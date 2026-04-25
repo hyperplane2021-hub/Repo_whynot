@@ -81,7 +81,7 @@ def _plan_queries(
     fallback = _fallback_query_plan(question, round_number, previous_assessments)
     llm_result = generate_json_result(
         instructions=(
-            "You are RepoOps Prior Decision Investigation Planner. Return only valid JSON "
+            "You are Repo_whynot Prior Decision Investigation Planner. Return only valid JSON "
             "matching InvestigationQueryPlan. Generate concise GitHub issue search query "
             "fragments, not full URLs. The executor will add repo and closed issue filters. "
             "Prefer queries that can find explicit maintainer decisions, not broad docs."
@@ -109,7 +109,7 @@ def _assess_threads(question: str, threads: list[dict[str, Any]]) -> list[Thread
     }
     llm_result = generate_json_result(
         instructions=(
-            "You are RepoOps Prior Decision Evidence Reviewer. Return JSON with key "
+            "You are Repo_whynot Prior Decision Evidence Reviewer. Return JSON with key "
             "`assessments`, a list of ThreadAssessment objects. Mark relevance as "
             "direct_decision only when the thread directly answers the user's request. "
             "Use adjacent_decision for nearby but not exact maintainer decisions. Assess "
@@ -172,7 +172,7 @@ def _result_from_threads(
     fallback = _fallback_result(repo, question, ranked[:8])
     llm_result = generate_json_result(
         instructions=(
-            "You are RepoOps Prior Decision Synthesizer. Return only valid JSON matching "
+            "You are Repo_whynot Prior Decision Synthesizer. Return only valid JSON matching "
             "PriorDecisionResult. Use only the found GitHub threads. Distinguish direct "
             "decisions from adjacent decisions and state uncertainty clearly."
         ),

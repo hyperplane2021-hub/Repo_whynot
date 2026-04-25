@@ -47,7 +47,7 @@ def _synthesize_triage(state: GraphState) -> dict:
     fallback = result.model_dump()
     llm_result = generate_json_result(
         instructions=(
-            "You are RepoOps Maintainer Agent. Return only valid JSON matching the "
+            "You are Repo_whynot. Return only valid JSON matching the "
             "complete IssueTriageResult schema. Start from local_fallback and improve "
             "only text fields or reasoning fields supported by evidence. Keep the full "
             "evidence array unchanged. Do not invent files, issue numbers, labels, or "
@@ -95,7 +95,7 @@ def _synthesize_answer(state: GraphState) -> dict:
     fallback = result.model_dump()
     llm_result = generate_json_result(
         instructions=(
-            "You are RepoOps Maintainer Agent. Return only valid JSON matching the "
+            "You are Repo_whynot. Return only valid JSON matching the "
             "complete RepoAnswer schema. Start from local_fallback and improve the answer "
             "using only the provided local repository evidence. Keep the full evidence "
             "array unchanged. Do not invent facts. Cite evidence_id in every "

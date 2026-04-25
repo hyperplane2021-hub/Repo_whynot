@@ -6,7 +6,7 @@ from app.api.routes_query import router as query_router
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="RepoOps Maintainer Agent", version="0.3.0")
+    app = FastAPI(title="Repo_whynot", version="0.3.0")
     app.include_router(health_router)
     app.include_router(index_router)
     app.include_router(query_router)

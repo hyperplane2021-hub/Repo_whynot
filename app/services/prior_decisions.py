@@ -17,7 +17,7 @@ def detect_prior_decision(repo: str, question: str, k: int = 8) -> PriorDecision
     fallback = _fallback_result(repo, question, candidates)
     llm_result = generate_json_result(
         instructions=(
-            "You are RepoOps Prior Decision Detector. Return only valid JSON matching "
+            "You are Repo_whynot Prior Decision Detector. Return only valid JSON matching "
             "PriorDecisionResult. Decide whether the user's request or question appears "
             "to have a prior maintainer decision in the provided closed GitHub threads. "
             "Prefer explicit maintainer comments, labels, and closed canonical threads. "

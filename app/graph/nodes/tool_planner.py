@@ -9,7 +9,7 @@ def tool_planner(state: GraphState) -> GraphState:
     fallback_plan = _fallback_tool_plan(state)
     llm_result = generate_json_result(
         instructions=(
-            "You are the RepoOps LLM Tool Planner. Return only valid JSON matching "
+            "You are the Repo_whynot LLM Tool Planner. Return only valid JSON matching "
             "ToolPlan. You may plan read-only tool calls only. Allowed tools are "
             "read_file, grep_repo, git_log, search_issues. Do not execute tools and "
             "do not propose write actions."

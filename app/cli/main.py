@@ -10,7 +10,7 @@ from app.rag.indexer import build_index
 from app.services.prior_decision_investigator import investigate_prior_decision
 from app.services.prior_decisions import detect_prior_decision
 
-app = typer.Typer(help="RepoOps Maintainer Agent v0.3")
+app = typer.Typer(help="Repo_whynot v0.3")
 eval_app = typer.Typer(help="Run local evals.")
 github_app = typer.Typer(help="Read-only GitHub ingest commands.")
 app.add_typer(eval_app, name="eval")
