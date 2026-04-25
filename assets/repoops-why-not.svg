@@ -1,34 +1,38 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Repo_whynot</title>
-  <desc id="desc">A diagram showing a user question flowing through read-only search, evidence grading, and a cited decision result.</desc>
-  <rect width="1200" height="630" fill="#101418"/>
-  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#F7F3EA"/>
-  <rect x="88" y="88" width="1024" height="454" rx="18" fill="#FFFFFF" stroke="#17212B" stroke-width="3"/>
+  <desc id="desc">A clean product card for Repo_whynot showing a question, issue search, and a cited maintainer decision.</desc>
 
-  <text x="118" y="150" fill="#17212B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="52" font-weight="800">Repo_whynot</text>
-  <text x="118" y="196" fill="#51606D" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="25" font-weight="600">A small tool for prior maintainer decisions</text>
+  <rect width="1200" height="630" fill="#111827"/>
+  <rect x="70" y="58" width="1060" height="514" rx="26" fill="#F8FAFC"/>
 
-  <rect x="118" y="252" width="234" height="128" rx="14" fill="#EAF3F8" stroke="#2B6F8F" stroke-width="2"/>
-  <text x="144" y="294" fill="#17212B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="750">Question</text>
-  <text x="144" y="329" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">Why was this</text>
-  <text x="144" y="354" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">idea rejected?</text>
+  <text x="116" y="136" fill="#111827" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="58" font-weight="850">Repo_whynot</text>
+  <text x="118" y="178" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="600">A small tool for finding prior maintainer decisions</text>
 
-  <rect x="438" y="232" width="306" height="168" rx="14" fill="#FFF2D9" stroke="#A76511" stroke-width="2"/>
-  <text x="464" y="274" fill="#17212B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="750">Bounded Investigation</text>
-  <text x="464" y="310" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">query planning</text>
-  <text x="464" y="338" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">read-only GitHub search</text>
-  <text x="464" y="366" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">evidence grading</text>
+  <rect x="116" y="230" width="968" height="244" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
 
-  <rect x="830" y="252" width="246" height="128" rx="14" fill="#E9F6EC" stroke="#2D7A46" stroke-width="2"/>
-  <text x="856" y="294" fill="#17212B" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="750">Decision Result</text>
-  <text x="856" y="329" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">accepted / rejected</text>
-  <text x="856" y="354" fill="#2D3A44" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">with evidence IDs</text>
+  <rect x="154" y="268" width="286" height="150" rx="14" fill="#EEF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <circle cx="190" cy="306" r="16" fill="#3B82F6"/>
+  <text x="184" y="314" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="850">?</text>
+  <text x="220" y="312" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="800">Question</text>
+  <text x="184" y="354" fill="#334155" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19">Why was this</text>
+  <text x="184" y="382" fill="#334155" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19">feature declined?</text>
 
-  <path d="M366 316H414" stroke="#17212B" stroke-width="5" stroke-linecap="round"/>
-  <path d="M414 316L398 302M414 316L398 330" stroke="#17212B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M758 316H806" stroke="#17212B" stroke-width="5" stroke-linecap="round"/>
-  <path d="M806 316L790 302M806 316L790 330" stroke="#17212B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M468 343H526" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M526 343L508 327M526 343L508 359" stroke="#64748B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect x="118" y="440" width="958" height="56" rx="12" fill="#17212B"/>
-  <text x="144" y="476" fill="#F7F3EA" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="650">No comments, labels, closes, pushes, or maintainer mutations. Just cited prior decisions.</text>
+  <rect x="560" y="268" width="250" height="150" rx="14" fill="#FFF7ED" stroke="#F97316" stroke-width="2"/>
+  <rect x="592" y="304" width="76" height="14" rx="7" fill="#FDBA74"/>
+  <rect x="592" y="332" width="150" height="12" rx="6" fill="#FED7AA"/>
+  <rect x="592" y="358" width="118" height="12" rx="6" fill="#FED7AA"/>
+  <text x="592" y="394" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="800">Issue history</text>
+
+  <path d="M836 343H894" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M894 343L876 327M894 343L876 359" stroke="#64748B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="928" y="268" width="118" height="150" rx="14" fill="#ECFDF3" stroke="#22C55E" stroke-width="2"/>
+  <path d="M965 340L984 359L1017 318" stroke="#16A34A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="960" y="394" fill="#0F172A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="800">Cited</text>
+
+  <rect x="116" y="502" width="968" height="40" rx="20" fill="#111827"/>
+  <text x="146" y="529" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="650">read-only GitHub search · evidence IDs · accepted / rejected / deferred / duplicate</text>
 </svg>
